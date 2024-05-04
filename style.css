@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Ubuntu:wght@500&display=swap');
+:root{
+    --fundo1:#091979;
+    --fundo2: #00d4ff;
+    
+
+    --color1:#E5E7EB;
+    --color2:#343434;
+    --color3:#262626;
+
+    --linear-gradient: linear-gradient(120deg, var(--fundo1),var(--fundo2));
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, var(--fundo1),var(--fundo2));
+}
+/* Estilização do card preto */
+.calculator{
+    background-color: var(--color3);
+    color: var(--color1);
+    /* colocar uma sobra no card: */
+    box-shadow:  10px 10px 10px rgba(0.0.0.0.323);
+    /* Arredondar as pontas do card */
+    border-radius: 8px;
+    /* dar um espaçamento entre as letras e o card */
+    padding: 15px;
+    /* centralizar os textos ao meio: */
+    text-align: center;
+    opacity: 50px;
+
+}
+
+.input-container{
+    /* margem no card preto */
+    margin: 25px 0px;
+}
+.input-group{
+    /* inputs centralizados: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização dos inputs */
+.input-group input{
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+/* Estilização dos textos entre os inputs */
+.input-group span{
+    background-color: var(--color3);
+    /* 0 px cima e baixo e 15px lados */
+    padding: 0px 15px;
+}
+/* Customização do "X" */
+.input-group p{
+    background: var(--linear-gradient);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+}
+/* Margem no texto "Assim como" */
+.input-text{
+    /* 15px cima e baixo e 0px aos lados */
+    margin: 15px 0px;
+}
+/* Estilização do botão de calcular */
+#calculate{
+    background: var(--linear-gradient);
+    border: none;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    /* com width de 100% fez o botão preencher todo o espaço no card preto */
+    /* width: 100%; */
+    transition: background-color .5s ease;
+    color: var(--color1);
+}
+#calculate:hover{
+    background-color: var(--color2);
+}
+hr{
+    margin-top: 5px;
+}
